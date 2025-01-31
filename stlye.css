@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('assets/arka_plan.png'); /* PNG arka plan görseli */
+    background-size: cover; /* Arka planın tüm ekranı kaplaması için */
+    background-position: center; /* Arka planın ortalanması */
+    background-repeat: no-repeat; /* Arka planın tekrarlanmaması için */
+    background-attachment: fixed; /* Arka planın kaydırılmaması için */
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.altlik {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(240, 240, 240, 0.8); /* Altlıkların biraz şeffaf olması için */
+    border: 2px dashed #888;
+    position: relative;
+}
+
+.fincan {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#message {
+    margin-top: 30px;
+    font-size: 20px;
+    color: green;
+}
